@@ -138,69 +138,51 @@ function addEvent(event) {
     updateDoc(newDoc)
 }
 
-var toolbox = {
-    "kind": "flyoutToolbox",
+toolbox = {
+  "kind": "categoryToolbox",
+  "contents": [
+   {
+    "kind": "category",
+    "name" : "Math",
+    "colour": "#36f",
     "contents": [
-      {
-        "kind": "block",
-        "type": "controls_if"
-      },
-      {
-        "kind": "block",
-        "type": "logic_compare"
-      },
-      {
-        "kind": "block",
-        "type": "controls_repeat_ext"
-      },
-      {
-        "kind": "block",
-        "type": "math_number",
-        "fields": {
-          NUM: 123
-        }
-      },
-      {
-        "kind": "block",
-        "type": "math_arithmetic"
-      },
-      {
-        "kind": "block",
-        "type": "text"
-      },
-      {
-        "kind": "block",
-        "type": "text_print"
-      },
-      {
-        "kind": "block",
-        "type": "variables_get",
-        "fields": {
-          "VAR": {
-            "name": "i"
-          }
-        }
-      },
-      {
-        "kind": "block",
-        "type": "variables_set",
-        "fields": {
-          "VAR": {
-            "name": "i"
-          }
-        }
-      },
-      {
-        "kind": "block",
-        "type": "variables_get",
-        "fields": {
-          "VAR": {
-            "name": "k"
-          }
-        }
-      },
+     {
+       "kind": "block",
+       "type": "math_arithmetic"
+     },
+     {
+       "kind": "block",
+       "type": "math_atan2"
+     },
+     {
+       "kind": "block",
+       "type": "math_constant"
+     },
+     {
+       "kind": "block",
+       "type": "math_number"
+     },
+     {
+       "kind": "block",
+       "type": "math_number_property"
+     },
+     {
+       "kind": "block",
+       "type": "math_trig"
+     },
+     {
+       "kind": "block",
+       "type": "logic_compare"
+     },
     ]
-  };
+   },
+   {
+      "kind": "category",
+      "name": "Variables",
+      "custom": "VARIABLE"
+   },
+  ]
+ }
 
 // Inject primary workspace. 
 var primaryWorkspace = Blockly.inject('primaryDiv',
