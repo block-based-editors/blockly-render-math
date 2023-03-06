@@ -138,7 +138,7 @@ function addEvent(event) {
     updateDoc(newDoc)
 }
 
-toolbox = {
+var toolbox = {
   "kind": "categoryToolbox",
   "contents": [
    {
