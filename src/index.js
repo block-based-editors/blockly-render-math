@@ -183,10 +183,10 @@ var toolbox = {
       },
       {
         "kind": "block",
-        "type": "variables_get",
+        "type": "variables_set",
         "fields": {
           "VAR": {
-            "name": "j"
+            "name": "i"
           }
         }
       },
